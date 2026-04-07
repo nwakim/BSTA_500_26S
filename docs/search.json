@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Schedule",
     "section": "",
-    "text": "We will be working off these R tutorials from my Epi 525 class\n\nSchedule\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nLesson\nTopic\nVideo\nSlides HTML\nSlides PDF\nSlides Notes\nActivity\n\n\n\n\n1\n7/9\nR01\nDownload R and RStudio\n\n\n\n\nIn class: download R and Rstudio\n\n\n\n\nR02\nR Basics, part 1\n\n\n\n\n\n\n\n2\n7/16\nR03\nR Basics, part 2\n \n\n\n\nIn class: Work through Iris dataset example + troubleshooting\n\n\n\nIn class on 7/16\nR04\nReproducibility, File Organization, and Projects\n\n\n\n\nIn class: Make project folder for this class\n\n\n3\n7/23\nR05\nIntro to Quarto, packages, and importing data\n \n\n\n\nIn class: Make .qmd and complete R exercise in this Homework\n\n\n4\n7/30\nR06\nggplot , part 1\n\n\n\n\nIn class: Make .qmd and complete R exercise in this Homework\n\n\n5\n8/6\nR07\nLaTeX in Quarto\n\n\n\n\n\n\n\n6\n8/13\nR08\nTransforming and subetting data with tidyverse\n \n\n\n \nIn class: work with chol data, wide to long, subetting, etc.\n\n\n7\n8/20\nR09\nSummarizing data with tidyverse and Table 1\n\n\n\n\nIn class: go over slides with pauses for activity, not sure why there is no video (??)\n\n\n8\n8/27\n\nFlex week\n\n\n\n\n\n\n\n9\n9/3\n\nFlex week\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n View the source on GitHub"
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nLesson\nTopic\nCorresponding R slides\nActivity\n\n\n\n\n1\n04/02\n\nNo class\n\n\n\n\n2\n04/09\n1\nSet-up\n\nIn class: Decide on IDE and download necessary software\n\n\n\n\n2\nPython basics\n \nIn class: Walk through basics for Python\n\n\n3\n04/16\n4\nReproducibility, File Organization, and Projects (?)\n\n\n\n\n\n\n5\nIntro to Quarto (?), packages, and importing data\n\n\n\n\n4\n04/23\n6\nPlotting\n\n\n\n\n5\n04/30\n7\nLaTeX (?) and other add-ons for Python\n\n\n\n\n6\n05/07\n8\nTransforming and subetting data\n\n\n\n\n7\n05/14\n9\nSummarizing data\n\n\n\n\n8\n05/21\n\nFlex week\n\n\n\n\n9\n05/28\n\nFlex week\n\n\n\n\n\n\n\n\n\n\n\n View the source on GitHub"
   },
   {
     "objectID": "about.html",
@@ -992,5 +992,96 @@
     "title": "R04: Reproducibility, File Organization, and Projects",
     "section": "Where are we?",
     "text": "Where are we?"
+  },
+  {
+    "objectID": "lessons/R01_Download_R/P01_Download_Python.html#what-is-python",
+    "href": "lessons/R01_Download_R/P01_Download_Python.html#what-is-python",
+    "title": "P1: Download + Intro to Python & VS Code",
+    "section": "What is Python?",
+    "text": "What is Python?\n\n\n\nA general-purpose programming language\nThe “gold standard” for machine learning and data science\nExtensive libraries for biostatistics (pandas, statsmodels)\nHighly readable syntax"
+  },
+  {
+    "objectID": "lessons/R01_Download_R/P01_Download_Python.html#what-tools-do-we-use-with-python",
+    "href": "lessons/R01_Download_R/P01_Download_Python.html#what-tools-do-we-use-with-python",
+    "title": "Py1: Download + Intro to Python & Jupyter",
+    "section": "What tools do we use with Python?",
+    "text": "What tools do we use with Python?\n\n\n\nPython is a programming language\n\n\n\nWe use tools to write and run Python code:\n\nVS Code (recommended)\nJupyter Notebooks\n\nThese act like an interface (similar role to RStudio!)"
+  },
+  {
+    "objectID": "lessons/R01_Download_R/P01_Download_Python.html#we-will-use-vs-code-jupyter",
+    "href": "lessons/R01_Download_R/P01_Download_Python.html#we-will-use-vs-code-jupyter",
+    "title": "Py1: Download + Intro to Python & Jupyter",
+    "section": "We will use VS Code + Jupyter",
+    "text": "We will use VS Code + Jupyter\n\nVS Code = where we write and organize code\n\nJupyter Notebooks = interactive coding + output\n\n👉 Think of this like: - R = Python\n- RStudio = VS Code"
+  },
+  {
+    "objectID": "lessons/R01_Download_R/P01_Download_Python.html#if-you-have-issues-downloading-on-your-laptop",
+    "href": "lessons/R01_Download_R/P01_Download_Python.html#if-you-have-issues-downloading-on-your-laptop",
+    "title": "P1: Download + Intro to Python & VS Code",
+    "section": "If you have issues downloading on your laptop",
+    "text": "If you have issues downloading on your laptop\n\nIf your installation is giving you trouble, there is a powerful browser-based version provided by Google.\nGoogle Colab: https://colab.research.google.com/\n\nWorks just like a Google Doc for code.\nNo installation required.\nGreat for following along in class today!"
+  },
+  {
+    "objectID": "lessons/R01_Download_R/P01_Download_Python.html#lets-download-python",
+    "href": "lessons/R01_Download_R/P01_Download_Python.html#lets-download-python",
+    "title": "Py1: Download + Intro to Python & Jupyter",
+    "section": "Let’s download Python!",
+    "text": "Let’s download Python!\n\nStart here: :contentReferenceoaicite:2\n👉 https://www.python.org/downloads/\nDownload the latest version for your OS\n\nDuring installation:\n\n✅ Check “Add Python to PATH”\n\nWe will walk through this together!"
+  },
+  {
+    "objectID": "lessons/R01_Download_R/P01_Download_Python.html#next-install-vs-code",
+    "href": "lessons/R01_Download_R/P01_Download_Python.html#next-install-vs-code",
+    "title": "Py1: Download + Intro to Python & Jupyter",
+    "section": "Next: Install VS Code",
+    "text": "Next: Install VS Code\n\nDownload from: :contentReferenceoaicite:3\n👉 https://code.visualstudio.com/\nInstall like any normal application\nOnce installed:\n\nOpen VS Code"
+  },
+  {
+    "objectID": "lessons/R01_Download_R/P01_Download_Python.html#install-python-extension-in-vs-code",
+    "href": "lessons/R01_Download_R/P01_Download_Python.html#install-python-extension-in-vs-code",
+    "title": "Py1: Download + Intro to Python & Jupyter",
+    "section": "Install Python extension in VS Code",
+    "text": "Install Python extension in VS Code\n\nOpen VS Code\n\nGo to Extensions (left sidebar)\nInstall:\n\nPython (by Microsoft)\nJupyter (by Microsoft)\n\nThese allow you to:\n\nRun Python code\n\nUse notebooks"
+  },
+  {
+    "objectID": "lessons/R01_Download_R/P01_Download_Python.html#if-everything-is-installed",
+    "href": "lessons/R01_Download_R/P01_Download_Python.html#if-everything-is-installed",
+    "title": "Py1: Download + Intro to Python & Jupyter",
+    "section": "If everything is installed…",
+    "text": "If everything is installed…\n\nOpen VS Code\n\nCreate a new file\n\nTry typing:\n```python print(“Hello, world!”)"
+  },
+  {
+    "objectID": "lessons/R01_Download_R/P01_Download_Python.html#what-is-vs-code-our-rstudio-equivalent",
+    "href": "lessons/R01_Download_R/P01_Download_Python.html#what-is-vs-code-our-rstudio-equivalent",
+    "title": "P1: Download + Intro to Python & VS Code",
+    "section": "What is VS Code? (Our RStudio equivalent)",
+    "text": "What is VS Code? (Our RStudio equivalent)\n\n\nPython is the Engine\n\nIt does the calculations.\nYou could run it in a terminal, but it’s not pretty.\n\n\nVS Code is the Dashboard\n\nAn Integrated Development Environment (IDE).\nIt provides a script editor, file explorer, and data viewer all in one place."
+  },
+  {
+    "objectID": "lessons/R01_Download_R/P01_Download_Python.html#we-open-vs-code-on-our-computer",
+    "href": "lessons/R01_Download_R/P01_Download_Python.html#we-open-vs-code-on-our-computer",
+    "title": "P1: Download + Intro to Python & VS Code",
+    "section": "We open VS Code on our computer",
+    "text": "We open VS Code on our computer\n\nJust like in R, we rarely open the “Python” app itself.\nWe open Visual Studio Code (or Anaconda Navigator) to write and run our code.\nInside VS Code, we will use Jupyter Notebooks (.ipynb files)—these are the Python equivalent of Quarto or RMarkdown."
+  },
+  {
+    "objectID": "lessons/R01_Download_R/P01_Download_Python.html#so-lets-take-some-time-to-download-each",
+    "href": "lessons/R01_Download_R/P01_Download_Python.html#so-lets-take-some-time-to-download-each",
+    "title": "P1: Download + Intro to Python & VS Code",
+    "section": "So let’s take some time to download each!",
+    "text": "So let’s take some time to download each!\n\nStep 1: Install Python\n\nLink: https://www.python.org/downloads/\nCRITICAL: On Windows, check the box that says “Add Python to PATH” during installation.\n\nStep 2: Install VS Code\n\nLink: https://code.visualstudio.com/\nOnce installed, open VS Code, go to the “Extensions” view (square icons on the left), and search for/install the “Python” extension by Microsoft.\n\nAlternative (The All-in-One):\n\nYou can also download Anaconda: https://www.anaconda.com/\nThis installs Python, VS Code, and most math libraries all at once."
+  },
+  {
+    "objectID": "lessons/R01_Download_R/P01_Download_Python.html#vs-code-anatomy-for-python",
+    "href": "lessons/R01_Download_R/P01_Download_Python.html#vs-code-anatomy-for-python",
+    "title": "P1: Download + Intro to Python & VS Code",
+    "section": "VS Code Anatomy (for Python)",
+    "text": "VS Code Anatomy (for Python)\n\nEditor (Top Left): Where you write your scripts or Notebook cells.\nVariables/Jupyter Server (Top Right): Keeps track of your data frames and variables.\nTerminal/Output (Bottom): Where Python “talks” back to you.\nFile Explorer (Far Left): To manage your datasets and folders."
+  },
+  {
+    "objectID": "lessons/R01_Download_R/P01_Download_Python.html#how-did-i-make-these-slides",
+    "href": "lessons/R01_Download_R/P01_Download_Python.html#how-did-i-make-these-slides",
+    "title": "P1: Download + Intro to Python & VS Code",
+    "section": "How did I make these slides?",
+    "text": "How did I make these slides?\n\nI used Gemini! Here is my exchange with Gemini"
   }
 ]
