@@ -1,0 +1,22 @@
+project:
+  type: website
+  execute-dir: project
+  output-dir: docs
+
+website:
+  title: "Introduction to R programming for Biostatistics"
+  navbar:
+    background: primary
+    search: true
+    foreground: "#fff"
+    collapse-below: sm
+
+execute:
+  freeze: auto
+
+format:
+  html:
+    theme:
+      - sandstone_NW.scss
+    toc: true
+
