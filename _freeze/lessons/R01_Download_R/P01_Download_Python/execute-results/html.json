@@ -1,0 +1,19 @@
+{
+  "hash": "3f94d56947e49d08c185a708525bd22f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"P1: Download + Intro to Python & VS Code\"\nauthor: \"Nicky Wakim\"\ntitle-slide-attributes:\n    data-background-color: \"#3e9c77\"\ndate: \"2026-04-09\"\nformat: \n  revealjs:\n    theme: \"../simple_NW_python.scss\"\n    chalkboard: true\n    slide-number: true\n    show-slide-number: all\n    width: 1955\n    height: 1100\n    footer: Python 01 Slides\n    html-math-method: mathjax\n    highlight-style: arrow\nexecute:\n  echo: true\n  freeze: auto\n---\n\n## How did I make these slides?\n\n\n::: {.cell}\n\n:::\n\n\n- I used Gemini! [Here is my exchange with Gemini](https://gemini.google.com/share/81f916269cfe)\n\n\n## What is Python?\n\n::: columns\n::: {.column width=\"70%\"}\n- A general-purpose programming language\n- The \"gold standard\" for machine learning and data science\n- Extensive libraries for biostatistics (`pandas`, `statsmodels`)\n- Highly readable syntax \n:::\n\n::: {.column width=\"30%\"}\n![](./images/Python-logo-notext.png)\n:::\n:::\n\n\n\n## What is an IDE?\n\n::: columns\n::: {.column width=\"50%\"}\n\n::: definition\n::: def-ttl\n**Python is the Engine**\n:::\n::: def-cont\n- It does the calculations.\n- You *could* run it in a terminal, but it’s not pretty.\n:::\n:::\n:::\n\n::: {.column width=\"50%\"}\n\n::: example\n::: ex-ttl\n**Integrated Development Environment (IDE) is the Dashboard**\n:::\n::: ex-cont\n- R Studio is an IDE for R\n- It provides a script editor, file explorer, and data viewer all in one place\n- I did some looking around, and we have a choice of IDEs:\n  - [VS Code](https://code.visualstudio.com/)\n  - [Positron](https://positron.posit.co/download.html)\n  - [Spyder](https://www.spyder-ide.org/)\n  - [Google Colab](https://colab.research.google.com/)\n  \n:::\n:::\n:::\n:::\n\n- We rarely open Python itself\n- We are usually working in specific Python files: `.py` (like `.R`) or `.ipynb` (Jupyter Notebooks, like `.qmd`)\n\n## So let's take some time to download each!\n\n- **Step 1: Install Python**\n    - Link: <https://www.python.org/downloads/>\n    - **CRITICAL:** On Windows, check the box that says **\"Add Python to PATH\"** during installation.\n\n- **Step 2: Install selected IDE**\n    - [VS code](https://code.visualstudio.com/)\n    - [Positron](https://positron.posit.co/download.html)",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Nicky Wakim">
-  <meta name="dcterms.date" content="2024-09-30">
+  <meta name="dcterms.date" content="2026-04-09">
   <title>Introduction to Python for Health Data Science – P1: Download + Intro to Python &amp; VS Code</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -143,21 +143,12 @@ Nicky Wakim
 </div>
 </div>
 
-  <p class="date">2024-09-30</p>
+  <p class="date">2026-04-09</p>
 </section>
 <section id="how-did-i-make-these-slides" class="slide level2">
 <h2>How did I make these slides?</h2>
 <ul>
 <li>I used Gemini! <a href="https://gemini.google.com/share/81f916269cfe">Here is my exchange with Gemini</a></li>
-</ul>
-</section>
-<section id="activities-for-the-class" class="slide level2">
-<h2>Activities for the class</h2>
-<ul>
-<li>Every other week, you will transform the R lectures to Python lectures!
-<ul>
-<li>This is pretty loose: within the topic, you can focus on whatever you’d like</li>
-</ul></li>
 </ul>
 </section>
 <section id="what-is-python" class="slide level2">
@@ -174,41 +165,44 @@ Nicky Wakim
 <p><img data-src="./images/Python-logo-notext.png"></p>
 </div></div>
 </section>
-<section id="what-is-vs-code-our-rstudio-equivalent" class="slide level2">
-<h2>What is VS Code? (Our RStudio equivalent)</h2>
+<section id="what-is-an-ide" class="slide level2">
+<h2>What is an IDE?</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
+<div class="definition">
+<div class="def-ttl">
 <p><strong>Python is the Engine</strong></p>
+</div>
+<div class="def-cont">
 <ul>
 <li>It does the calculations.</li>
 <li>You <em>could</em> run it in a terminal, but it’s not pretty.</li>
 </ul>
+</div>
+</div>
 </div><div class="column" style="width:50%;">
-<p><strong>VS Code is the Dashboard</strong></p>
+<div class="example">
+<div class="ex-ttl">
+<p><strong>Integrated Development Environment (IDE) is the Dashboard</strong></p>
+</div>
+<div class="ex-cont">
 <ul>
-<li>An Integrated Development Environment (IDE).</li>
-<li>It provides a script editor, file explorer, and data viewer all in one place.</li>
-</ul>
-</div></div>
-</section>
-<section id="we-open-vs-code-on-our-computer" class="slide level2">
-<h2>We open VS Code on our computer</h2>
+<li>R Studio is an IDE for R</li>
+<li>It provides a script editor, file explorer, and data viewer all in one place</li>
+<li>I did some looking around, and we have a choice of IDEs:
 <ul>
-<li>Just like in R, we rarely open the “Python” app itself.</li>
-<li>We open <strong>Visual Studio Code</strong> (or Anaconda Navigator) to write and run our code.</li>
-<li>Inside VS Code, we will use <strong>Jupyter Notebooks</strong> (.ipynb files)—these are the Python equivalent of Quarto or RMarkdown.</li>
-</ul>
-</section>
-<section id="if-you-have-issues-downloading-on-your-laptop" class="slide level2">
-<h2>If you have issues downloading on your laptop</h2>
-<ul>
-<li>If your installation is giving you trouble, there is a powerful browser-based version provided by Google.</li>
-<li><strong>Google Colab</strong>: <a href="https://colab.research.google.com/" class="uri">https://colab.research.google.com/</a>
-<ul>
-<li>Works just like a Google Doc for code.</li>
-<li>No installation required.</li>
-<li>Great for following along in class today!</li>
+<li><a href="https://code.visualstudio.com/">VS Code</a></li>
+<li><a href="https://positron.posit.co/download.html">Positron</a></li>
+<li><a href="https://www.spyder-ide.org/">Spyder</a></li>
+<li><a href="https://colab.research.google.com/">Google Colab</a></li>
 </ul></li>
+</ul>
+</div>
+</div>
+</div></div>
+<ul>
+<li>We rarely open Python itself</li>
+<li>We are usually working in specific Python files: <code>.py</code> (like <code>.R</code>) or <code>.ipynb</code> (Jupyter Notebooks, like <code>.qmd</code>)</li>
 </ul>
 </section>
 <section id="so-lets-take-some-time-to-download-each" class="slide level2">
@@ -219,25 +213,11 @@ Nicky Wakim
 <li>Link: <a href="https://www.python.org/downloads/" class="uri">https://www.python.org/downloads/</a></li>
 <li><strong>CRITICAL:</strong> On Windows, check the box that says <strong>“Add Python to PATH”</strong> during installation.</li>
 </ul></li>
-<li><strong>Step 2: Install VS Code</strong>
+<li><strong>Step 2: Install selected IDE</strong>
 <ul>
-<li>Link: <a href="https://code.visualstudio.com/" class="uri">https://code.visualstudio.com/</a></li>
-<li>Once installed, open VS Code, go to the “Extensions” view (square icons on the left), and search for/install the <strong>“Python” extension</strong> by Microsoft.</li>
+<li><a href="https://code.visualstudio.com/">VS code</a></li>
+<li><a href="https://positron.posit.co/download.html">Positron</a></li>
 </ul></li>
-<li><strong>Alternative (The All-in-One):</strong>
-<ul>
-<li>You can also download <strong>Anaconda</strong>: <a href="https://www.anaconda.com/" class="uri">https://www.anaconda.com/</a></li>
-<li>This installs Python, VS Code, and most math libraries all at once.</li>
-</ul></li>
-</ul>
-</section>
-<section id="vs-code-anatomy-for-python" class="slide level2">
-<h2>VS Code Anatomy (for Python)</h2>
-<ul>
-<li><strong>Editor (Top Left):</strong> Where you write your scripts or Notebook cells.</li>
-<li><strong>Variables/Jupyter Server (Top Right):</strong> Keeps track of your data frames and variables.</li>
-<li><strong>Terminal/Output (Bottom):</strong> Where Python “talks” back to you.</li>
-<li><strong>File Explorer (Far Left):</strong> To manage your datasets and folders.</li>
 </ul>
 
 
@@ -459,6 +439,44 @@ Nicky Wakim
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

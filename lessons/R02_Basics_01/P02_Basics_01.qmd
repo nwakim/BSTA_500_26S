@@ -1,0 +1,285 @@
+---
+title: "P02: Python basics"
+author: "Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#3e9c77"
+date: "`r library(here); source(here('class_dates.R')); w2d1`"
+format: 
+  revealjs:
+    theme: "../simple_NW_python.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Python 02 Slides
+    html-math-method: mathjax
+    highlight-style: arrow
+execute:
+  echo: true
+  freeze: auto
+---
+
+## To run the code in this lecture 
+
+- If you open up this qmd (for the slides) in R Studio, then you need to run the following in the Terminal:
+
+`python3 -m pip install pandas plotly statsmodels`
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(here)
+source(here("class_dates.R"))
+```
+
+## Coding in the Interactive Window (The Console)
+
+::: columns
+::: {.column width="50%"}
+When you open VS Code and start a Python Interactive window, it acts like the R Console.
+
+- Type code at the bottom prompt.
+- Press **Shift + Enter** to execute.
+- Output appears immediately above.
+:::
+
+::: {.column width="50%"}
+**Working with Scripts vs. Notebooks**
+
+- **.py files:** Pure scripts (like .R files).
+- **.ipynb files:** Jupyter Notebooks (like Quarto/Rmd). 
+- **Recommendation:** Use Notebooks for this class so you can keep your notes and code together!
+:::
+:::
+
+## Math calculations in Python
+
+Python follows standard order of operations (PEMDAS).
+
+::: columns
+::: {.column width="50%"}
+```{python}
+10**2  # Note: Power is ** in Python (not ^)
+3 ** 7
+6 / 9
+9 - 43
+```
+:::
+
+::: {.column width="50%"}
+```{python}
+4**3 - 2 * 7 + 9 / 2
+```
+
+The equation above is computed as $$4^3 − (2 \cdot 7) + \frac{9}{2}$$
+:::
+:::
+
+
+
+## Variables (Python Objects)
+
+::: columns
+::: {.column width="49%"}
+- We assign variables using `=`. 
+- Unlike R, there is no `<-` operator in Python.
+
+**Assign a single value:**
+```{python}
+x = 5
+print(x)
+```
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="49%"}
+**Assign a "List" or "Array"**
+
+- Consecutive integers using `range()`:
+```{python}
+a = list(range(3, 11)) # 3 up to (but not including) 11
+print(a)
+```
+
+- Create a list of numbers:
+```{python}
+b = [5, 12, 2, 100, 8]
+print(b)
+```
+:::
+:::
+
+## Let's try it out!
+
+- Create a new variable `y` and assign it the value of 8.
+- Create a new variable `c` that is a list of values 15 through 20.
+- Create a new variable `d` that is a list containing 16, 17, 18, 19, and 22.
+
+*Hint: Python's `range(start, stop)` stops **before** the stop number!*
+
+## Doing math with variables
+
+::: columns
+::: {.column width="50%"}
+**Single values:**
+```{python}
+x = 5
+print(x + 3)
+
+y = x**2
+print(y)
+```
+:::
+
+::: {.column width="50%"}
+**Element-wise math:**
+In Python, standard lists don't do element-wise math easily. We use **NumPy** for that!
+
+```{python}
+import numpy as np
+a = np.array([3, 4, 5, 6])
+
+a+3
+print(a + 2)
+print(a * 3)
+print(a * a)
+```
+:::
+:::
+
+
+
+## Variables can include text (Strings)
+
+```{python}
+hi = "hello"
+print(hi)
+
+# A list of strings
+greetings = ["Guten Tag", "Hola", hi]
+print(greetings)
+```
+
+## Using Functions
+
+- Functions in Python always use `()`.
+- We often "call" functions from libraries using the `.` notation (e.g., `np.mean()`).
+
+::: columns
+::: {.column width="50%"}
+**Keyword Arguments:**
+```{python}
+np.mean(a=[1, 2, 3, 4])
+```
+
+```{python}
+# Using a range function
+#list(range(start=1, stop=12, step=3))
+```
+:::
+
+::: {.column width="50%"}
+**Positional Arguments (In order):**
+```{python}
+np.mean([1, 2, 3, 4])
+```
+
+```{python}
+#list(range(1, 12, 3))
+```
+:::
+:::
+
+## Getting Help in Python
+
+1. **Use `help()` or `?`**:
+   - `help(np.mean)` or `np.mean?` in your console will pull up the documentation.
+2. **Google/StackOverflow**:
+   - Search for "pandas mean returns NaN" or "how to filter rows in pandas."
+3. **AI Tools**:
+   - Great for explaining errors. If you get a `TypeError`, paste it into the chat to see a breakdown.
+
+# Let's try with an example dataset
+
+## The `iris` dataset in Python
+
+To use datasets in Python, we use the `pandas` library.
+
+```{python}
+import pandas as pd
+import seaborn as sns
+
+# Load the built-in iris dataset
+iris = sns.load_dataset('iris')
+```
+
+
+
+## Exploring the Data
+
+::: columns
+::: {.column width="50%"}
+**View the first few rows:**
+```{python}
+iris.head()
+```
+
+**Get data types and info:**
+```{python}
+iris.info()
+```
+:::
+
+::: {.column width="50%"}
+**Summary statistics:**
+```{python}
+iris.describe()
+```
+
+**Get dimensions:**
+```{python}
+iris.shape # (rows, columns)
+```
+:::
+:::
+
+## The `.` (The Python equivalent of `$`)
+
+- To select a single column in Python, we use `.` or `['']`.
+- `DataFrame.ColumnName` or `DataFrame['ColumnName']`.
+
+```{python}
+# These do the same thing
+print(iris.petal_width)
+print(iris['petal_width'])
+```
+
+## Summary Stats on Columns
+
+```{python}
+print(iris.petal_width.mean())
+print(iris.petal_width.std())
+print(iris.petal_width.median())
+```
+
+## Common Python Errors
+
+**IndentationError**
+- Python cares about spaces at the start of lines! 
+
+**NameError**
+- Usually means you misspelled a variable or haven't run the cell where it was defined.
+
+**SyntaxError**
+- You might be missing a closing parenthesis `)` or a quote `"`.
+
+---
+
+### Key Sources for Python Basics:
+- [Pandas Cheat Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+- [Official Python Tutorial](https://docs.python.org/3/tutorial/)

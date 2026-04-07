@@ -3,7 +3,7 @@ title: "P1: Download + Intro to Python & VS Code"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3e9c77"
-date: "09/30/2024"
+date: "`r library(here); source(here('class_dates.R')); w2d1`"
 format: 
   revealjs:
     theme: "../simple_NW_python.scss"
@@ -22,12 +22,17 @@ execute:
 
 ## How did I make these slides?
 
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(here)
+source(here("class_dates.R"))
+```
+
 - I used Gemini! [Here is my exchange with Gemini](https://gemini.google.com/share/81f916269cfe)
 
-## Activities for the class
-
-- Every other week, you will transform the R lectures to Python lectures! 
-  - This is pretty loose: within the topic, you can focus on whatever you'd like
 
 ## What is Python?
 
@@ -46,39 +51,44 @@ execute:
 
 
 
-## What is VS Code? (Our RStudio equivalent)
+## What is an IDE?
 
 ::: columns
 ::: {.column width="50%"}
-**Python is the Engine**
 
+::: definition
+::: def-ttl
+**Python is the Engine**
+:::
+::: def-cont
 - It does the calculations.
 - You *could* run it in a terminal, but it’s not pretty.
 :::
+:::
+:::
 
 ::: {.column width="50%"}
-**VS Code is the Dashboard**
 
-- An Integrated Development Environment (IDE).
-- It provides a script editor, file explorer, and data viewer all in one place.
+::: example
+::: ex-ttl
+**Integrated Development Environment (IDE) is the Dashboard**
+:::
+::: ex-cont
+- R Studio is an IDE for R
+- It provides a script editor, file explorer, and data viewer all in one place
+- I did some looking around, and we have a choice of IDEs:
+  - [VS Code](https://code.visualstudio.com/)
+  - [Positron](https://positron.posit.co/download.html)
+  - [Spyder](https://www.spyder-ide.org/)
+  - [Google Colab](https://colab.research.google.com/)
+  
+:::
+:::
 :::
 :::
 
-
-
-## We open VS Code on our computer
-
-- Just like in R, we rarely open the "Python" app itself.
-- We open **Visual Studio Code** (or Anaconda Navigator) to write and run our code.
-- Inside VS Code, we will use **Jupyter Notebooks** (.ipynb files)—these are the Python equivalent of Quarto or RMarkdown.
-
-## If you have issues downloading on your laptop
-
-- If your installation is giving you trouble, there is a powerful browser-based version provided by Google.
-- **Google Colab**: <https://colab.research.google.com/>
-    - Works just like a Google Doc for code.
-    - No installation required.
-    - Great for following along in class today!
+- We rarely open Python itself
+- We are usually working in specific Python files: `.py` (like `.R`) or `.ipynb` (Jupyter Notebooks, like `.qmd`)
 
 ## So let's take some time to download each!
 
@@ -86,17 +96,6 @@ execute:
     - Link: <https://www.python.org/downloads/>
     - **CRITICAL:** On Windows, check the box that says **"Add Python to PATH"** during installation.
 
-- **Step 2: Install VS Code**
-    - Link: <https://code.visualstudio.com/>
-    - Once installed, open VS Code, go to the "Extensions" view (square icons on the left), and search for/install the **"Python" extension** by Microsoft.
-
-- **Alternative (The All-in-One):**
-    - You can also download **Anaconda**: <https://www.anaconda.com/>
-    - This installs Python, VS Code, and most math libraries all at once.
-
-## VS Code Anatomy (for Python)
-
-- **Editor (Top Left):** Where you write your scripts or Notebook cells.
-- **Variables/Jupyter Server (Top Right):** Keeps track of your data frames and variables.
-- **Terminal/Output (Bottom):** Where Python "talks" back to you.
-- **File Explorer (Far Left):** To manage your datasets and folders.
+- **Step 2: Install selected IDE**
+    - [VS code](https://code.visualstudio.com/)
+    - [Positron](https://positron.posit.co/download.html)

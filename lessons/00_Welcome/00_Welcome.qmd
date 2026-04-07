@@ -32,7 +32,10 @@ source(here("class_dates.R"))
 ## Hello!
 
 - Our site:  [nwakim.github.io/BSTA_500_26S](https://nwakim.github.io/BSTA_500_26S/) 
-- Question for a side quest: Would you like to learn Git and Github as well?
+
+ 
+
+- **Question for a side quest:** Would you like to learn Git and Github as well?
   - Part of this class will be creating "lessons" that will be shared on Github
   - You can send me qmd's and I can put them online **OR** we can all collaborate on my Github page
 
@@ -41,3 +44,4 @@ source(here("class_dates.R"))
 
 - Every other week, you will transform the R lectures to Python lectures! 
   - This is pretty loose: within the topic, you can focus on whatever you'd like
+- Grade will be pass/fail, based on completion of the activities

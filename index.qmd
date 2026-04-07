@@ -12,6 +12,8 @@ editor_options:
 
 This class is an independent study for students who have learned R and R Studio in previous courses and want to learn Python. The course will be structured around a series of lessons that cover the basics of Python programming, data manipulation, and data visualization. Each week, we will use a set of slides that served as lessons in R and translate them to Python. A student will be assigned different weeks to translate the slides and lead an informal lesson on Python.
 
+We will also mold our lessons using the textbook ["Python for Data Analysis"](https://wesmckinney.com/book/).
+
 ## Schedule
 
 ```{r}
@@ -24,19 +26,18 @@ source(here("class_dates.R"))
 ```
 
 | Week | Date | Lesson | Topic | Lecturer | R slides | Python slides | In-Class Activity |
-|---------|---------|---------|---------|---------|:-------:|---------|:--------|
+|---------|---------|---------|---------|---------|:-------:|:-------:|:--------|
 | 1 | `{r} w1d1 %>% format("%m/%d")` |  | No class |  |  |  |  |
 | 2 | `{r} w2d1 %>% format("%m/%d")` | 0 | Welcome | N | [[{{< iconify file-icons rstudio size=30px >}}](lessons/00_Welcome/00_Welcome.qmd)]{style="color:#f8f5f0;"} |  |  |
 |  |  | 1 | Set-up | N | [[{{< iconify file-icons rstudio size=30px >}}](lessons/R01_Download_R/R01_Download_R.qmd)]{style="color:#f8f5f0;"} | [[{{< iconify akar-icons python-fill size=30px >}}](lessons/R01_Download_R/P01_Download_Python.qmd)]{style="color:#f8f5f0;"} | Decide on IDE and download necessary software |
-|  |  | 2 | Python basics | N | [[{{< iconify file-icons rstudio size=30px >}}](lessons/R02_Basics_01/R02_Basics_01.qmd)]{style="color:#f8f5f0;"} [[{{< iconify file-icons rstudio size=30px >}}](lessons/R03_Basics_02/R03_Basics_02.qmd)]{style="color:#f8f5f0;"} |  | Walk through basics for Python |
-| 3 | `{r} w3d1 %>% format("%m/%d")` | 4 | Reproducibility, File Organization, and Projects (?) | M | [[{{< iconify file-icons rstudio size=30px >}}](lessons/R04_Reproducibility/R04_Reproducibility.qmd)]{style="color:#f8f5f0;"} |  |  |
+| 3 | `{r} w3d1 %>% format("%m/%d")` | 2 | Python basics | N | [[{{< iconify file-icons rstudio size=30px >}}](lessons/R02_Basics_01/R02_Basics_01.qmd)]{style="color:#f8f5f0;"} | [[{{< iconify akar-icons python-fill size=30px >}}](lessons/R02_Basics_01/P02_Basics_01.qmd)]{style="color:#f8f5f0;"} | Walk through basics for Python |
+| 4 | `{r} w4d1 %>% format("%m/%d")` | 4 | Reproducibility, File Organization, and Projects (?) | M | [[{{< iconify file-icons rstudio size=30px >}}](lessons/R04_Reproducibility/R04_Reproducibility.qmd)]{style="color:#f8f5f0;"} |  |  |
 |  |  | 5 | Intro to Quarto (?), packages, and importing data | M | [[{{< iconify file-icons rstudio size=30px >}}](lessons/R05_Quarto_01/R05_Quarto_01.qmd)]{style="color:#f8f5f0;"} |  |  |
-| 4 | `{r} w4d1 %>% format("%m/%d")` | 6 | Plotting | A | [[{{< iconify file-icons rstudio size=30px >}}](lessons/R06_ggplot_01/R06_ggplot_01.qmd)]{style="color:#f8f5f0;"} |  |  |
-| 5 | `{r} w5d1 %>% format("%m/%d")` | 7 | LaTeX (?) and other add-ons for Python | M | [[{{< iconify file-icons rstudio size=30px >}}](lessons/R07_LaTeX/R07_LaTeX.qmd)]{style="color:#f8f5f0;"} |  |  |
-| 6 | `{r} w6d1 %>% format("%m/%d")` | 8 | Transforming and subsetting data | A | [[{{< iconify file-icons rstudio size=30px >}}](lessons/R08_tidyverse_01/R08_tidyverse_01.qmd)]{style="color:#f8f5f0;"} |  |  |
-| 7 | `{r} w7d1 %>% format("%m/%d")` | 9 | Summarizing data | M | [[{{< iconify file-icons rstudio size=30px >}}](lessons/R09_tidyverse_02/R09_tidyverse_02.qmd)]{style="color:#f8f5f0;"} |  |  |
-| 8 | `{r} w8d1 %>% format("%m/%d")` |  |  |  |  |  |  |
-| 9 | `{r} w9d1 %>% format("%m/%d")` |  | Flex week |  |  |  |  |
+| 5 | `{r} w5d1 %>% format("%m/%d")` | 6 | Plotting | A | [[{{< iconify file-icons rstudio size=30px >}}](lessons/R06_ggplot_01/R06_ggplot_01.qmd)]{style="color:#f8f5f0;"} |  |  |
+| 6 | `{r} w6d1 %>% format("%m/%d")` | 7 | LaTeX (?) and other add-ons for Python | M | [[{{< iconify file-icons rstudio size=30px >}}](lessons/R07_LaTeX/R07_LaTeX.qmd)]{style="color:#f8f5f0;"} |  |  |
+| 7 | `{r} w7d1 %>% format("%m/%d")` | 8 | Transforming and subsetting data | A | [[{{< iconify file-icons rstudio size=30px >}}](lessons/R08_tidyverse_01/R08_tidyverse_01.qmd)]{style="color:#f8f5f0;"} |  |  |
+| 8 | `{r} w8d1 %>% format("%m/%d")` | 9 | Summarizing data | M | [[{{< iconify file-icons rstudio size=30px >}}](lessons/R09_tidyverse_02/R09_tidyverse_02.qmd)]{style="color:#f8f5f0;"} |  |  |
+| 9 | `{r} w9d1 %>% format("%m/%d")` |  |  |  |  |  |  |
 | 10 | `{r} w10d1 %>% format("%m/%d")` |  | Flex week |  |  |  |  |
 
 : {.striped .hover tbl-colwidths="\[4, 4, 4, 20, 4,4, 4, 20\]"}

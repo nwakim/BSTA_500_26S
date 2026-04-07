@@ -1,0 +1,535 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"P02: Python basics\"\n",
+        "author: \"Nicky Wakim\"\n",
+        "title-slide-attributes:\n",
+        "    data-background-color: \"#3e9c77\"\n",
+        "date: \"`r library(here); source(here('class_dates.R')); w2d1`\"\n",
+        "format: \n",
+        "  revealjs:\n",
+        "    theme: \"../simple_NW_python.scss\"\n",
+        "    chalkboard: true\n",
+        "    slide-number: true\n",
+        "    show-slide-number: all\n",
+        "    width: 1955\n",
+        "    height: 1100\n",
+        "    footer: Python 02 Slides\n",
+        "    html-math-method: mathjax\n",
+        "    highlight-style: arrow\n",
+        "execute:\n",
+        "  echo: true\n",
+        "  freeze: auto\n",
+        "---\n",
+        "\n",
+        "## To run the code in this lecture \n",
+        "\n",
+        "- If you open up this qmd (for the slides) in R Studio, then you need to run the following in the Terminal:\n",
+        "\n",
+        "```\n",
+        "python3 -m pip install pandas plotly statsmodels\n",
+        "```\n",
+        "\n",
+        "\n",
+        "## Coding in the Interactive Window (The Console)\n",
+        "\n",
+        "::: columns\n",
+        "::: {.column width=\"50%\"}\n",
+        "When you open VS Code and start a Python Interactive window, it acts like the R Console.\n",
+        "\n",
+        "- Type code at the bottom prompt.\n",
+        "- Press **Shift + Enter** to execute.\n",
+        "- Output appears immediately above.\n",
+        ":::\n",
+        "\n",
+        "::: {.column width=\"50%\"}\n",
+        "**Working with Scripts vs. Notebooks**\n",
+        "\n",
+        "- **.py files:** Pure scripts (like .R files).\n",
+        "- **.ipynb files:** Jupyter Notebooks (like Quarto/Rmd). \n",
+        "- **Recommendation:** Use Notebooks for this class so you can keep your notes and code together!\n",
+        ":::\n",
+        ":::\n",
+        "\n",
+        "## Math calculations in Python\n",
+        "\n",
+        "Python follows standard order of operations (PEMDAS).\n",
+        "\n",
+        "::: columns\n",
+        "::: {.column width=\"50%\"}"
+      ],
+      "id": "f8a5303f"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "10**2  # Note: Power is ** in Python (not ^)\n",
+        "3 ** 7\n",
+        "6 / 9\n",
+        "9 - 43"
+      ],
+      "id": "a0dc1517",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        ":::\n",
+        "\n",
+        "::: {.column width=\"50%\"}"
+      ],
+      "id": "819db626"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "4**3 - 2 * 7 + 9 / 2"
+      ],
+      "id": "41bdf4b0",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "The equation above is computed as $$4^3 − (2 \\cdot 7) + \\frac{9}{2}$$\n",
+        ":::\n",
+        ":::\n",
+        "\n",
+        "\n",
+        "\n",
+        "## Variables (Python Objects)\n",
+        "\n",
+        "::: columns\n",
+        "::: {.column width=\"49%\"}\n",
+        "- We assign variables using `=`. \n",
+        "- Unlike R, there is no `<-` operator in Python.\n",
+        "\n",
+        "**Assign a single value:**"
+      ],
+      "id": "53af64a7"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "x = 5\n",
+        "print(x)"
+      ],
+      "id": "c61440ae",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        ":::\n",
+        "\n",
+        "::: {.column width=\"2%\"}\n",
+        ":::\n",
+        "\n",
+        "::: {.column width=\"49%\"}\n",
+        "**Assign a \"List\" or \"Array\"**\n",
+        "\n",
+        "- Consecutive integers using `range()`:"
+      ],
+      "id": "a71ec600"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "a = list(range(3, 11)) # 3 up to (but not including) 11\n",
+        "print(a)"
+      ],
+      "id": "77df0fb3",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "- Create a list of numbers:"
+      ],
+      "id": "44fa56a2"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "b = [5, 12, 2, 100, 8]\n",
+        "print(b)"
+      ],
+      "id": "20b844a6",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        ":::\n",
+        ":::\n",
+        "\n",
+        "## Let's try it out!\n",
+        "\n",
+        "- Create a new variable `y` and assign it the value of 8.\n",
+        "- Create a new variable `c` that is a list of values 15 through 20.\n",
+        "- Create a new variable `d` that is a list containing 16, 17, 18, 19, and 22.\n",
+        "\n",
+        "*Hint: Python's `range(start, stop)` stops **before** the stop number!*\n",
+        "\n",
+        "## Doing math with variables\n",
+        "\n",
+        "::: columns\n",
+        "::: {.column width=\"50%\"}\n",
+        "**Single values:**"
+      ],
+      "id": "8d80952d"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "x = 5\n",
+        "print(x + 3)\n",
+        "\n",
+        "y = x**2\n",
+        "print(y)"
+      ],
+      "id": "6f36a276",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        ":::\n",
+        "\n",
+        "::: {.column width=\"50%\"}\n",
+        "**Element-wise math:**\n",
+        "In Python, standard lists don't do element-wise math easily. We use **NumPy** for that!"
+      ],
+      "id": "0c8cf07b"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import numpy as np\n",
+        "a = np.array([3, 4, 5, 6])\n",
+        "\n",
+        "a+3\n",
+        "print(a + 2)\n",
+        "print(a * 3)\n",
+        "print(a * a)"
+      ],
+      "id": "98f53af1",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        ":::\n",
+        ":::\n",
+        "\n",
+        "\n",
+        "\n",
+        "## Variables can include text (Strings)"
+      ],
+      "id": "5aa5e3fc"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "hi = \"hello\"\n",
+        "print(hi)\n",
+        "\n",
+        "# A list of strings\n",
+        "greetings = [\"Guten Tag\", \"Hola\", hi]\n",
+        "print(greetings)"
+      ],
+      "id": "26d134ab",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Using Functions\n",
+        "\n",
+        "- Functions in Python always use `()`.\n",
+        "- We often \"call\" functions from libraries using the `.` notation (e.g., `np.mean()`).\n",
+        "\n",
+        "::: columns\n",
+        "::: {.column width=\"50%\"}\n",
+        "**Keyword Arguments:**"
+      ],
+      "id": "ccb24e51"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "np.mean(a=[1, 2, 3, 4])"
+      ],
+      "id": "222e2ced",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "# Using a range function\n",
+        "list(range(start=1, stop=12, step=3))"
+      ],
+      "id": "1fb74331",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        ":::\n",
+        "\n",
+        "::: {.column width=\"50%\"}\n",
+        "**Positional Arguments (In order):**"
+      ],
+      "id": "aa3bb593"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "np.mean([1, 2, 3, 4])"
+      ],
+      "id": "057dac18",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "list(range(1, 12, 3))"
+      ],
+      "id": "c7014935",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        ":::\n",
+        ":::\n",
+        "\n",
+        "## Getting Help in Python\n",
+        "\n",
+        "1. **Use `help()` or `?`**:\n",
+        "   - `help(np.mean)` or `np.mean?` in your console will pull up the documentation.\n",
+        "2. **Google/StackOverflow**:\n",
+        "   - Search for \"pandas mean returns NaN\" or \"how to filter rows in pandas.\"\n",
+        "3. **AI Tools**:\n",
+        "   - Great for explaining errors. If you get a `TypeError`, paste it into the chat to see a breakdown.\n",
+        "\n",
+        "# Let's try with an example dataset\n",
+        "\n",
+        "## The `iris` dataset in Python\n",
+        "\n",
+        "To use datasets in Python, we use the `pandas` library."
+      ],
+      "id": "7ca3f0f6"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import pandas as pd\n",
+        "import seaborn as sns\n",
+        "\n",
+        "# Load the built-in iris dataset\n",
+        "iris = sns.load_dataset('iris')"
+      ],
+      "id": "1e452083",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Exploring the Data\n",
+        "\n",
+        "::: columns\n",
+        "::: {.column width=\"50%\"}\n",
+        "**View the first few rows:**"
+      ],
+      "id": "506fe759"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "iris.head()"
+      ],
+      "id": "9755d730",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "**Get data types and info:**"
+      ],
+      "id": "2d55a754"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "iris.info()"
+      ],
+      "id": "8fdb14a6",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        ":::\n",
+        "\n",
+        "::: {.column width=\"50%\"}\n",
+        "**Summary statistics:**"
+      ],
+      "id": "da52c052"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "iris.describe()"
+      ],
+      "id": "f418d1a1",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "**Get dimensions:**"
+      ],
+      "id": "82b49e43"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "iris.shape # (rows, columns)"
+      ],
+      "id": "744eb531",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        ":::\n",
+        ":::\n",
+        "\n",
+        "## The `.` (The Python equivalent of `$`)\n",
+        "\n",
+        "- To select a single column in Python, we use `.` or `['']`.\n",
+        "- `DataFrame.ColumnName` or `DataFrame['ColumnName']`."
+      ],
+      "id": "3be59899"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "# These do the same thing\n",
+        "print(iris.petal_width)\n",
+        "print(iris['petal_width'])"
+      ],
+      "id": "1bba3f19",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Summary Stats on Columns"
+      ],
+      "id": "6738c12d"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "print(iris.petal_width.mean())\n",
+        "print(iris.petal_width.std())\n",
+        "print(iris.petal_width.median())"
+      ],
+      "id": "2536bd80",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Common Python Errors\n",
+        "\n",
+        "**IndentationError**\n",
+        "- Python cares about spaces at the start of lines! \n",
+        "\n",
+        "**NameError**\n",
+        "- Usually means you misspelled a variable or haven't run the cell where it was defined.\n",
+        "\n",
+        "**SyntaxError**\n",
+        "- You might be missing a closing parenthesis `)` or a quote `\"`.\n",
+        "\n",
+        "---\n",
+        "\n",
+        "### Key Sources for Python Basics:\n",
+        "- [Pandas Cheat Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)\n",
+        "- [Official Python Tutorial](https://docs.python.org/3/tutorial/)"
+      ],
+      "id": "38db8475"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/wakim/Library/Python/3.9/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
