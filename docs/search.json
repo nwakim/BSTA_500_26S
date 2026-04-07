@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Schedule",
+    "title": "BSTA 500: Introduction to Python for Health Data Science",
     "section": "",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nLesson\nTopic\nCorresponding R slides\nActivity\n\n\n\n\n1\n04/02\n\nNo class\n\n\n\n\n2\n04/09\n1\nSet-up\n\nIn class: Decide on IDE and download necessary software\n\n\n\n\n2\nPython basics\n \nIn class: Walk through basics for Python\n\n\n3\n04/16\n4\nReproducibility, File Organization, and Projects (?)\n\n\n\n\n\n\n5\nIntro to Quarto (?), packages, and importing data\n\n\n\n\n4\n04/23\n6\nPlotting\n\n\n\n\n5\n04/30\n7\nLaTeX (?) and other add-ons for Python\n\n\n\n\n6\n05/07\n8\nTransforming and subetting data\n\n\n\n\n7\n05/14\n9\nSummarizing data\n\n\n\n\n8\n05/21\n\nFlex week\n\n\n\n\n9\n05/28\n\nFlex week\n\n\n\n\n\n\n\n\n\n\n\n View the source on GitHub"
+    "text": "This class is an independent study for students who have learned R and R Studio in previous courses and want to learn Python. The course will be structured around a series of lessons that cover the basics of Python programming, data manipulation, and data visualization. Each week, we will use a set of slides that served as lessons in R and translate them to Python. A student will be assigned different weeks to translate the slides and lead an informal lesson on Python."
   },
   {
     "objectID": "about.html",
@@ -1083,5 +1083,33 @@
     "title": "P1: Download + Intro to Python & VS Code",
     "section": "How did I make these slides?",
     "text": "How did I make these slides?\n\nI used Gemini! Here is my exchange with Gemini"
+  },
+  {
+    "objectID": "lessons/R01_Download_R/P01_Download_Python.html#activities-for-the-class",
+    "href": "lessons/R01_Download_R/P01_Download_Python.html#activities-for-the-class",
+    "title": "P1: Download + Intro to Python & VS Code",
+    "section": "Activities for the class",
+    "text": "Activities for the class\n\nEvery other week, you will transform the R lectures to Python lectures!\n\nThis is pretty loose: within the topic, you can focus on whatever you’d like"
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "BSTA 500: Introduction to Python for Health Data Science",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nLesson\nTopic\nLecturer\nR slides\nPython slides\nIn-Class Activity\n\n\n\n\n1\n04/02\n\nNo class\n\n\n\n\n\n\n2\n04/09\n0\nWelcome\nN\n\n\n\n\n\n\n\n1\nSet-up\nN\n\n\nDecide on IDE and download necessary software\n\n\n\n\n2\nPython basics\nN\n \n\nWalk through basics for Python\n\n\n3\n04/16\n4\nReproducibility, File Organization, and Projects (?)\nM\n\n\n\n\n\n\n\n5\nIntro to Quarto (?), packages, and importing data\nM\n\n\n\n\n\n4\n04/23\n6\nPlotting\nA\n\n\n\n\n\n5\n04/30\n7\nLaTeX (?) and other add-ons for Python\nM\n\n\n\n\n\n6\n05/07\n8\nTransforming and subsetting data\nA\n\n\n\n\n\n7\n05/14\n9\nSummarizing data\nM\n\n\n\n\n\n8\n05/21\n\n\n\n\n\n\n\n\n9\n05/28\n\nFlex week\n\n\n\n\n\n\n10\n06/04\n\nFlex week\n\n\n\n\n\n\n\n\n\n\n\n\n\n View the source on GitHub"
+  },
+  {
+    "objectID": "lessons/00_Welcome/00_Welcome.html#hello",
+    "href": "lessons/00_Welcome/00_Welcome.html#hello",
+    "title": "Welcome",
+    "section": "Hello!",
+    "text": "Hello!\n\nOur site: nwakim.github.io/BSTA_500_26S\nQuestion for a side quest: Would you like to learn Git and Github as well?\n\nPart of this class will be creating “lessons” that will be shared on Github\nYou can send me qmd’s and I can put them online OR we can all collaborate on my Github page"
+  },
+  {
+    "objectID": "lessons/00_Welcome/00_Welcome.html#activities-for-the-class",
+    "href": "lessons/00_Welcome/00_Welcome.html#activities-for-the-class",
+    "title": "Welcome",
+    "section": "Activities for the class",
+    "text": "Activities for the class\n\nEvery other week, you will transform the R lectures to Python lectures!\n\nThis is pretty loose: within the topic, you can focus on whatever you’d like"
   }
 ]

@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction to Python for Health Data Science</title>
+<title>BSTA 500: Introduction to Python for Health Data Science – Introduction to Python for Health Data Science</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -32,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-226f341fa60e088697d478d60d025dea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-56b40bc7aa4069513d6b05dfa4accf1c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/iconify-1.0.7/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -80,8 +82,6 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-sm " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Introduction to Python for Health Data Science</span>
     </a>
@@ -102,6 +102,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
+<h1 class="title">BSTA 500: Introduction to Python for Health Data Science</h1>
 </div>
 
 
@@ -124,8 +125,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="schedule" class="level1">
-<h1>Schedule</h1>
+<p>This class is an independent study for students who have learned R and R Studio in previous courses and want to learn Python. The course will be structured around a series of lessons that cover the basics of Python programming, data manipulation, and data visualization. Each week, we will use a set of slides that served as lessons in R and translate them to Python. A student will be assigned different weeks to translate the slides and lead an informal lesson on Python.</p>
+<section id="schedule" class="level2">
+<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
 <table class="table-striped table-hover caption-top table">
 <colgroup>
 <col style="width: 4%">
@@ -134,6 +136,8 @@ ul.task-list li input[type="checkbox"] {
 <col style="width: 20%">
 <col style="width: 4%">
 <col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -141,8 +145,10 @@ ul.task-list li input[type="checkbox"] {
 <th>Date</th>
 <th>Lesson</th>
 <th>Topic</th>
-<th style="text-align: center;">Corresponding R slides</th>
-<th style="text-align: left;">Activity</th>
+<th>Lecturer</th>
+<th style="text-align: center;">R slides</th>
+<th>Python slides</th>
+<th style="text-align: left;">In-Class Activity</th>
 </tr>
 </thead>
 <tbody>
@@ -151,87 +157,129 @@ ul.task-list li input[type="checkbox"] {
 <td>04/02</td>
 <td></td>
 <td>No class</td>
+<td></td>
 <td style="text-align: center;"></td>
+<td></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>04/09</td>
-<td>1</td>
-<td>Set-up</td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R01_Download_R/R01_Download_R.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
-<td style="text-align: left;">In class: Decide on IDE and download necessary software</td>
+<td>0</td>
+<td>Welcome</td>
+<td>N</td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/00_Welcome/00_Welcome.html"><iconify-icon inline="" icon="file-icons:rstudio" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
+<td></td>
+<td></td>
+<td>1</td>
+<td>Set-up</td>
+<td>N</td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R01_Download_R/R01_Download_R.html"><iconify-icon inline="" icon="file-icons:rstudio" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td><span style="color:#f8f5f0;"><a href="./lessons/R01_Download_R/P01_Download_Python.html"><iconify-icon inline="" icon="akar-icons:python-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td style="text-align: left;">Decide on IDE and download necessary software</td>
+</tr>
+<tr class="even">
 <td></td>
 <td></td>
 <td>2</td>
 <td>Python basics</td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R02_Basics_01/R02_Basics_01.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span> <span style="color:#f8f5f0;"><a href="./lessons/R03_Basics_02/R03_Basics_02.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
-<td style="text-align: left;">In class: Walk through basics for Python</td>
+<td>N</td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R02_Basics_01/R02_Basics_01.html"><iconify-icon inline="" icon="file-icons:rstudio" style="font-size: 30px;"></iconify-icon></a></span> <span style="color:#f8f5f0;"><a href="./lessons/R03_Basics_02/R03_Basics_02.html"><iconify-icon inline="" icon="file-icons:rstudio" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td></td>
+<td style="text-align: left;">Walk through basics for Python</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>3</td>
 <td>04/16</td>
 <td>4</td>
 <td>Reproducibility, File Organization, and Projects (?)</td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R04_Reproducibility/R04_Reproducibility.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td>M</td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R04_Reproducibility/R04_Reproducibility.html"><iconify-icon inline="" icon="file-icons:rstudio" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td></td>
 <td></td>
 <td>5</td>
 <td>Intro to Quarto (?), packages, and importing data</td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R05_Quarto_01/R05_Quarto_01.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td>M</td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R05_Quarto_01/R05_Quarto_01.html"><iconify-icon inline="" icon="file-icons:rstudio" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>4</td>
 <td>04/23</td>
 <td>6</td>
 <td>Plotting</td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R06_ggplot_01/R06_ggplot_01.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td>A</td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R06_ggplot_01/R06_ggplot_01.html"><iconify-icon inline="" icon="file-icons:rstudio" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>5</td>
 <td>04/30</td>
 <td>7</td>
 <td>LaTeX (?) and other add-ons for Python</td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R07_LaTeX/R07_LaTeX.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>05/07</td>
-<td>8</td>
-<td>Transforming and subetting data</td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R08_tidyverse_01/R08_tidyverse_01.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td>M</td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R07_LaTeX/R07_LaTeX.html"><iconify-icon inline="" icon="file-icons:rstudio" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
+<td>6</td>
+<td>05/07</td>
+<td>8</td>
+<td>Transforming and subsetting data</td>
+<td>A</td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R08_tidyverse_01/R08_tidyverse_01.html"><iconify-icon inline="" icon="file-icons:rstudio" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
 <td>7</td>
 <td>05/14</td>
 <td>9</td>
 <td>Summarizing data</td>
-<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R09_tidyverse_02/R09_tidyverse_02.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td>8</td>
-<td>05/21</td>
+<td>M</td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R09_tidyverse_02/R09_tidyverse_02.html"><iconify-icon inline="" icon="file-icons:rstudio" style="font-size: 30px;"></iconify-icon></a></span></td>
 <td></td>
-<td>Flex week</td>
-<td style="text-align: center;"></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
+<td>8</td>
+<td>05/21</td>
+<td></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
 <td>9</td>
 <td>05/28</td>
 <td></td>
 <td>Flex week</td>
+<td></td>
 <td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>06/04</td>
+<td></td>
+<td>Flex week</td>
+<td></td>
+<td style="text-align: center;"></td>
+<td></td>
 <td style="text-align: left;"></td>
 </tr>
 </tbody>

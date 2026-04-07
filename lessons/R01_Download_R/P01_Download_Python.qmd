@@ -1,12 +1,12 @@
 ---
 title: "P1: Download + Intro to Python & VS Code"
-author: "Meike Niederhausen and Nicky Wakim (Python Adaptation)"
+author: "Nicky Wakim"
 title-slide-attributes:
-    data-background-color: "#3776AB" # Python Blue
+    data-background-color: "#3e9c77"
 date: "09/30/2024"
 format: 
   revealjs:
-    theme: "../simple_NW.scss"
+    theme: "../simple_NW_python.scss"
     chalkboard: true
     slide-number: true
     show-slide-number: all
@@ -23,6 +23,11 @@ execute:
 ## How did I make these slides?
 
 - I used Gemini! [Here is my exchange with Gemini](https://gemini.google.com/share/81f916269cfe)
+
+## Activities for the class
+
+- Every other week, you will transform the R lectures to Python lectures! 
+  - This is pretty loose: within the topic, you can focus on whatever you'd like
 
 ## What is Python?
 
