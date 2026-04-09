@@ -1096,7 +1096,7 @@
     "href": "index.html#schedule",
     "title": "BSTA 500: Introduction to Python for Health Data Science",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nLesson\nTopic\nLecturer\nR slides\nPython slides\nIn-Class Activity\n\n\n\n\n1\n04/02\n\nNo class\n\n\n\n\n\n\n2\n04/09\n0\nWelcome\nN\n\n\n\n\n\n\n\n1\nSet-up\nN\n\n\nDecide on IDE and download necessary software\n\n\n3\n04/16\n2\nPython basics\nN\n\n\nWalk through basics for Python\n\n\n4\n04/23\n4\nReproducibility, File Organization, and Projects (?)\nM\n\n\n\n\n\n\n\n5\nIntro to Quarto (?), packages, and importing data\nM\n\n\n\n\n\n5\n04/30\n6\nPlotting\nA\n\n\n\n\n\n6\n05/07\n7\nLaTeX (?) and other add-ons for Python\nM\n\n\n\n\n\n7\n05/14\n8\nTransforming and subsetting data\nA\n\n\n\n\n\n8\n05/21\n9\nSummarizing data\nM\n\n\n\n\n\n9\n05/28\n\n\n\n\n\n\n\n\n10\n06/04\n\nFlex week\n\n\n\n\n\n\n\n\n\n\n\n\n\n View the source on GitHub"
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nLesson\nTopic\nLecturer\nR slides\nPython slides\nIn-Class Activity\n\n\n\n\n1\n04/02\n\nNo class\n\n\n\n\n\n\n2\n04/09\n0\nWelcome\nN\n\n\n\n\n\n\n\n1\nSet-up\nN\n\n\nDecide on IDE and download necessary software\n\n\n3\n04/16\n2\nPython basics\nN\n\n\nWalk through basics for Python\n\n\n4\n04/23\n4\nReproducibility, File Organization, and Projects (?)\nM\n\n\n\n\n\n\n\n5\nIntro to Quarto (?), packages, and importing data\nM\n\n\n\n\n\n5\n04/30\n6\nPlotting\nA\n\n\n\n\n\n6\n05/07\n7\nLaTeX (?) and other add-ons for Python\nM\n\n\n\n\n\n7\n05/14\n8\nTransforming and subsetting data\nA\n\n\n\n\n\n8\n05/21\n9\nSummarizing data\nM\n\n\n\n\n\n9\n05/28\n\n\n\n\n\n\n\n\n10\n06/04\n\nFlex week"
   },
   {
     "objectID": "lessons/00_Welcome/00_Welcome.html#hello",
@@ -1573,5 +1573,12 @@
     "title": "P02: Python basics",
     "section": "To run the code in this lecture",
     "text": "To run the code in this lecture\n\nIf you open up this qmd (for the slides) in R Studio, then you need to run the following in the Terminal:\n\npython3 -m pip install pandas plotly statsmodels"
+  },
+  {
+    "objectID": "index.html#ongoing-list-of-video-references",
+    "href": "index.html#ongoing-list-of-video-references",
+    "title": "BSTA 500: Introduction to Python for Health Data Science",
+    "section": "Ongoing list of video references",
+    "text": "Ongoing list of video references\n\nFrom RStudio to Positron: A Better Data Science IDE (R and Python)\n\n\n\n\n\n\n\n View the source on GitHub"
   }
 ]

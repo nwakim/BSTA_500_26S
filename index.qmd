@@ -42,6 +42,10 @@ source(here("class_dates.R"))
 
 : {.striped .hover tbl-colwidths="\[4, 4, 4, 20, 4,4, 4, 20\]"}
 
+## Ongoing list of video references
+
+-   [From RStudio to Positron: A Better Data Science IDE (R and Python)](https://www.youtube.com/watch?v=tvm4bJf1xzI)
+
 ------------------------------------------------------------------------
 
 ::::: grid
