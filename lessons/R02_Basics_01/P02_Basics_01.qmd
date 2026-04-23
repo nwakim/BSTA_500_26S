@@ -3,7 +3,7 @@ title: "P02: Python basics"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3e9c77"
-date: "`r library(here); source(here('class_dates.R')); w2d1`"
+date: "`r library(here); source(here('class_dates.R')); w4d1`"
 format: 
   revealjs:
     theme: "../simple_NW_python.scss"
@@ -25,6 +25,8 @@ execute:
 - If you open up this qmd (for the slides) in R Studio, then you need to run the following in the Terminal:
 
 `python3 -m pip install pandas plotly statsmodels`
+
+- If running in Positron, I didn't run into this issue
 
 ```{r}
 #| echo: false
@@ -177,9 +179,11 @@ print(greetings)
 np.mean(a=[1, 2, 3, 4])
 ```
 
+- Does not always work! `range()` is implemented in C and is not a Python function
+   - Error I got: `TypeError: range() takes no keyword arguments`
 ```{python}
 # Using a range function
-#list(range(start=1, stop=12, step=3))
+# list(range(start=1, stop=13, step=3)) # does NOT work!!
 ```
 :::
 
@@ -190,7 +194,7 @@ np.mean([1, 2, 3, 4])
 ```
 
 ```{python}
-#list(range(1, 12, 3))
+list(range(1, 13, 3))
 ```
 :::
 :::
@@ -203,6 +207,7 @@ np.mean([1, 2, 3, 4])
    - Search for "pandas mean returns NaN" or "how to filter rows in pandas."
 3. **AI Tools**:
    - Great for explaining errors. If you get a `TypeError`, paste it into the chat to see a breakdown.
+   - I used it to [figure out why my qmd would not run](https://chatgpt.com/share/69ea78f0-c33c-83e8-87b7-4e894aea7bc3)
 
 # Let's try with an example dataset
 

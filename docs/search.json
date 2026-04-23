@@ -1096,7 +1096,7 @@
     "href": "index.html#schedule",
     "title": "BSTA 500: Introduction to Python for Health Data Science",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nLesson\nTopic\nLecturer\nR slides\nPython slides\nIn-Class Activity\n\n\n\n\n1\n04/02\n\nNo class\n\n\n\n\n\n\n2\n04/09\n0\nWelcome\nN\n\n\n\n\n\n\n\n1\nSet-up\nN\n\n\nDecide on IDE and download necessary software\n\n\n3\n04/16\n2\nPython basics\nN\n\n\nWalk through basics for Python\n\n\n4\n04/23\n4\nReproducibility, File Organization, and Projects (?)\nM\n\n\n\n\n\n\n\n5\nIntro to Quarto (?), packages, and importing data\nM\n\n\n\n\n\n5\n04/30\n6\nPlotting\nA\n\n\n\n\n\n6\n05/07\n7\nLaTeX (?) and other add-ons for Python\nM\n\n\n\n\n\n7\n05/14\n8\nTransforming and subsetting data\nA\n\n\n\n\n\n8\n05/21\n9\nSummarizing data\nM\n\n\n\n\n\n9\n05/28\n\n\n\n\n\n\n\n\n10\n06/04\n\nFlex week"
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nLesson\nTopic\nLecturer\nR slides\nPython slides\nIn-Class Activity\n\n\n\n\n1\n04/02\n\nNo class\n\n\n\n\n\n\n2\n04/09\n0\nWelcome\nN\n\n\n\n\n\n\n\n1\nSet-up\nN\n\n\nDecide on IDE and download necessary software\n\n\n3\n04/16\n\nNo class\n\n\n\n\n\n\n4\n04/23\n2\nPython basics\nN\n\n\nWalk through basics for Python\n\n\n\n\n4\nReproducibility, File Organization, and Projects (?)\nM\n\n\n\n\n\n5\n04/30\n5\nIntro to Quarto (?), packages, and importing data\nM\n\n\n\n\n\n6\n05/07\n6\nPlotting\nA\n\n\n\n\n\n7\n05/14\n7\nLaTeX (?) and other add-ons for Python\nM\n\n\n\n\n\n8\n05/21\n8\nTransforming and subsetting data\nA\n\n\n\n\n\n9\n05/28\n9\nSummarizing data\nM\n\n\n\n\n\n10\n06/04"
   },
   {
     "objectID": "lessons/00_Welcome/00_Welcome.html#hello",
@@ -1369,7 +1369,7 @@
     "href": "lessons/R02_Basics_01/P02_Basics_01.html#using-functions",
     "title": "P02: Python basics",
     "section": "Using Functions",
-    "text": "Using Functions\n\nFunctions in Python always use ().\nWe often “call” functions from libraries using the . notation (e.g., np.mean()).\n\n\n\nKeyword Arguments:\n\nnp.mean(a=[1, 2, 3, 4])\n\nnp.float64(2.5)\n\n\n\n# Using a range function\n#list(range(start=1, stop=12, step=3))\n\n\nPositional Arguments (In order):\n\nnp.mean([1, 2, 3, 4])\n\nnp.float64(2.5)\n\n\n\n#list(range(1, 12, 3))"
+    "text": "Using Functions\n\nFunctions in Python always use ().\nWe often “call” functions from libraries using the . notation (e.g., np.mean()).\n\n\n\nKeyword Arguments:\n\nnp.mean(a=[1, 2, 3, 4])\n\nnp.float64(2.5)\n\n\n\nDoes not always work! range() is implemented in C and is not a Python function\n\nError I got: TypeError: range() takes no keyword arguments\n\n\n\n# Using a range function\n# list(range(start=1, stop=13, step=3)) # does NOT work!!\n\n\nPositional Arguments (In order):\n\nnp.mean([1, 2, 3, 4])\n\nnp.float64(2.5)\n\n\n\nlist(range(1, 13, 3))\n\n[1, 4, 7, 10]"
   },
   {
     "objectID": "lessons/R02_Basics_01/P02_Basics_01.html#now-lets-use-some-functions-for-summary-statistics",
@@ -1530,7 +1530,7 @@
     "href": "lessons/R02_Basics_01/P02_Basics_01.html#getting-help-in-python",
     "title": "P02: Python basics",
     "section": "Getting Help in Python",
-    "text": "Getting Help in Python\n\nUse help() or ?:\n\nhelp(np.mean) or np.mean? in your console will pull up the documentation.\n\nGoogle/StackOverflow:\n\nSearch for “pandas mean returns NaN” or “how to filter rows in pandas.”\n\nAI Tools:\n\nGreat for explaining errors. If you get a TypeError, paste it into the chat to see a breakdown."
+    "text": "Getting Help in Python\n\nUse help() or ?:\n\nhelp(np.mean) or np.mean? in your console will pull up the documentation.\n\nGoogle/StackOverflow:\n\nSearch for “pandas mean returns NaN” or “how to filter rows in pandas.”\n\nAI Tools:\n\nGreat for explaining errors. If you get a TypeError, paste it into the chat to see a breakdown.\nI used it to figure out why my qmd would not run"
   },
   {
     "objectID": "lessons/R02_Basics_01/P02_Basics_01.html#the-iris-dataset-in-python",
@@ -1572,7 +1572,7 @@
     "href": "lessons/R02_Basics_01/P02_Basics_01.html#to-run-the-code-in-this-lecture",
     "title": "P02: Python basics",
     "section": "To run the code in this lecture",
-    "text": "To run the code in this lecture\n\nIf you open up this qmd (for the slides) in R Studio, then you need to run the following in the Terminal:\n\npython3 -m pip install pandas plotly statsmodels"
+    "text": "To run the code in this lecture\n\nIf you open up this qmd (for the slides) in R Studio, then you need to run the following in the Terminal:\n\npython3 -m pip install pandas plotly statsmodels\n\nIf running in Positron, I didn’t run into this issue"
   },
   {
     "objectID": "index.html#ongoing-list-of-video-references",

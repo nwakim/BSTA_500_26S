@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Nicky Wakim">
-  <meta name="dcterms.date" content="2026-04-09">
+  <meta name="dcterms.date" content="2026-04-23">
   <title>Introduction to Python for Health Data Science – P02: Python basics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -209,7 +209,7 @@ Nicky Wakim
 </div>
 </div>
 
-  <p class="date">2026-04-09</p>
+  <p class="date">2026-04-23</p>
 </section>
 <section id="to-run-the-code-in-this-lecture" class="slide level2">
 <h2>To run the code in this lecture</h2>
@@ -217,6 +217,9 @@ Nicky Wakim
 <li>If you open up this qmd (for the slides) in R Studio, then you need to run the following in the Terminal:</li>
 </ul>
 <p><code>python3 -m pip install pandas plotly statsmodels</code></p>
+<ul>
+<li>If running in Positron, I didn’t run into this issue</li>
+</ul>
 </section>
 <section id="coding-in-the-interactive-window-the-console" class="slide level2">
 <h2>Coding in the Interactive Window (The Console)</h2>
@@ -394,9 +397,15 @@ Nicky Wakim
 <pre><code>np.float64(2.5)</code></pre>
 </div>
 </div>
+<ul>
+<li>Does not always work! <code>range()</code> is implemented in C and is not a Python function
+<ul>
+<li>Error I got: <code>TypeError: range() takes no keyword arguments</code></li>
+</ul></li>
+</ul>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a></a><span class="co"># Using a range function</span></span>
-<span id="cb35-2"><a></a><span class="co">#list(range(start=1, stop=12, step=3))</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb35-2"><a></a><span class="co"># list(range(start=1, stop=13, step=3)) # does NOT work!!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div><div class="column" style="width:50%;">
 <p><strong>Positional Arguments (In order):</strong></p>
@@ -407,7 +416,10 @@ Nicky Wakim
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a></a><span class="co">#list(range(1, 12, 3))</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a></a><span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">13</span>, <span class="dv">3</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1, 4, 7, 10]</code></pre>
+</div>
 </div>
 </div></div>
 </section>
@@ -425,6 +437,7 @@ Nicky Wakim
 <li><strong>AI Tools</strong>:
 <ul>
 <li>Great for explaining errors. If you get a <code>TypeError</code>, paste it into the chat to see a breakdown.</li>
+<li>I used it to <a href="https://chatgpt.com/share/69ea78f0-c33c-83e8-87b7-4e894aea7bc3">figure out why my qmd would not run</a></li>
 </ul></li>
 </ol>
 </section>
@@ -437,11 +450,11 @@ Nicky Wakim
 <h2>The <code>iris</code> dataset in Python</h2>
 <p>To use datasets in Python, we use the <code>pandas</code> library.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb39-2"><a></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb39-3"><a></a></span>
-<span id="cb39-4"><a></a><span class="co"># Load the built-in iris dataset</span></span>
-<span id="cb39-5"><a></a>iris <span class="op">=</span> sns.load_dataset(<span class="st">'iris'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb40-2"><a></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb40-3"><a></a></span>
+<span id="cb40-4"><a></a><span class="co"># Load the built-in iris dataset</span></span>
+<span id="cb40-5"><a></a>iris <span class="op">=</span> sns.load_dataset(<span class="st">'iris'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="exploring-the-data" class="slide level2">
@@ -450,7 +463,7 @@ Nicky Wakim
 <div class="column" style="width:50%;">
 <p><strong>View the first few rows:</strong></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a></a>iris.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a></a>iris.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   sepal_length  sepal_width  petal_length  petal_width species
 0           5.1          3.5           1.4          0.2  setosa
@@ -462,7 +475,7 @@ Nicky Wakim
 </div>
 <p><strong>Get data types and info:</strong></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a></a>iris.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a></a>iris.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.DataFrame'&gt;
 RangeIndex: 150 entries, 0 to 149
@@ -481,7 +494,7 @@ memory usage: 6.0 KB</code></pre>
 </div><div class="column" style="width:50%;">
 <p><strong>Summary statistics:</strong></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a></a>iris.describe()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a></a>iris.describe()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>       sepal_length  sepal_width  petal_length  petal_width
 count    150.000000   150.000000    150.000000   150.000000
@@ -496,7 +509,7 @@ max        7.900000     4.400000      6.900000     2.500000</code></pre>
 </div>
 <p><strong>Get dimensions:</strong></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a></a>iris.shape <span class="co"># (rows, columns)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a></a>iris.shape <span class="co"># (rows, columns)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>(150, 5)</code></pre>
 </div>
@@ -510,8 +523,8 @@ max        7.900000     4.400000      6.900000     2.500000</code></pre>
 <li><code>DataFrame.ColumnName</code> or <code>DataFrame['ColumnName']</code>.</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a></a><span class="co"># These do the same thing</span></span>
-<span id="cb48-2"><a></a><span class="bu">print</span>(iris.petal_width)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a></a><span class="co"># These do the same thing</span></span>
+<span id="cb49-2"><a></a><span class="bu">print</span>(iris.petal_width)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>0      0.2
 1      0.2
@@ -526,7 +539,7 @@ max        7.900000     4.400000      6.900000     2.500000</code></pre>
 149    1.8
 Name: petal_width, Length: 150, dtype: float64</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a></a><span class="bu">print</span>(iris[<span class="st">'petal_width'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a></a><span class="bu">print</span>(iris[<span class="st">'petal_width'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>0      0.2
 1      0.2
@@ -546,15 +559,15 @@ Name: petal_width, Length: 150, dtype: float64</code></pre>
 <section id="summary-stats-on-columns" class="slide level2">
 <h2>Summary Stats on Columns</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a></a><span class="bu">print</span>(iris.petal_width.mean())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a></a><span class="bu">print</span>(iris.petal_width.mean())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>1.1993333333333336</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a></a><span class="bu">print</span>(iris.petal_width.std())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a></a><span class="bu">print</span>(iris.petal_width.std())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>0.7622376689603465</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a></a><span class="bu">print</span>(iris.petal_width.median())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a></a><span class="bu">print</span>(iris.petal_width.median())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>1.3</code></pre>
 </div>
